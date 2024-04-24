@@ -1,6 +1,12 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 
-export const StyledSectionContainer = styled(({ topMargin = 0, bottomMargin = 0, ...props }) => <div {...props} />)`
+interface StyledSectionContainerProps extends HTMLAttributes<HTMLDivElement> {
+  topMargin?: number;
+  bottomMargin?: number;
+}
+
+export const StyledSectionContainer = styled.div<StyledSectionContainerProps>`
   display: flex;
   max-width: 1920px;
   width: 100%;

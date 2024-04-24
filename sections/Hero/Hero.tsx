@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import {
   StyledTextContainer,
   StyledContainer,
@@ -9,8 +8,10 @@ import {
   StyledCTAContainer,
   StyledImageContainer,
 } from "./elements";
+import { FC } from "react";
+import { HeroProps } from "../../types/types";
 
-export const Hero = ({ image, title, description, ctaText, ...props }) => {
+export const Hero: FC<HeroProps> = ({ image, title, description, ctaText, ...props }) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
