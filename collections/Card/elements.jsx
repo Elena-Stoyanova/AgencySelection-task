@@ -1,7 +1,7 @@
 // Styled elements for the Card go here
 import styled from 'styled-components';
 
-import { SectionTinyHeading, SectionParagraph } from '~/components';
+import { SectionTinyHeading, SectionParagraph } from '../../components';
 
 export const StyledSectionCard = styled(({ ...props }) => <div {...props} />)`
   display: flex;

@@ -4,7 +4,7 @@ import {
   SectionContainer,
   SectionHeading,
   SectionInnerHeading,
-} from '~/components';
+} from "../../components";
 
 export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
