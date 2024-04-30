@@ -39,7 +39,7 @@ export const StyledSectionText = styled(({ ...props }) => <div {...props} />)`
 `;
 
 export const StyledTitle = styled(({ ...props }) => (
-  <a {...props} href={props.link} />
+  <SectionParagraph {...props} />
 ))`
   font-weight: 600;
   font-family: Poppins;

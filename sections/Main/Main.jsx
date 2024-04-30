@@ -12,7 +12,7 @@ import { Card } from '../../collections/Card/Card';
 const cardProps = [
   {
     id: 1,
-    image: { src: '/img/cardImg1.png', alt: '', width: 64, height: 64 },
+    icon: { src: '/img/iconCard1.png', alt: '', width: 64, height: 64 },
     title: 'Brief',
     description:
       'Complete <span style="font-weight: 600" >brief writing or simple guidance</span> on what to include, we ve got you covered.',
@@ -22,7 +22,7 @@ const cardProps = [
   },
   {
     id: 2,
-    image: { src: '/img/cardImg2.png', alt: '', width: 64, height: 64 },
+    icon: { src: '/img/iconCard2.png', alt: '', width: 64, height: 64 },
     title: 'Search',
     description:
       'In-depth agency search covering; <span style="font-weight: 600" >criteria matching, </span>door knocking and due-dilligence vetting.',
@@ -32,7 +32,7 @@ const cardProps = [
   },
   {
     id: 3,
-    image: { src: '/img/cardImg3.png', alt: '', width: 64, height: 64 },
+    icon: { src: '/img/iconCard3.png', alt: '', width: 64, height: 64 },
     title: 'Pitch',
     description:
       'Comprehensive <span style="font-weight: 600" >pitch management,</span> including cooms, diary management and pitch hosting.',
@@ -42,7 +42,7 @@ const cardProps = [
   },
 ];
 
-export const AgencySelection = ({ image, title, description, ...props }) => {
+export const Main = ({ image, title, description, ...props }) => {
   return (
     <StyledContainer {...props}>
       <StyledTitle>{title}</StyledTitle>
