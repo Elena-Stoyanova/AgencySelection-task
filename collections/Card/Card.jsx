@@ -1,13 +1,34 @@
 // The Card to be exported goes here
-export const Card = () => {
-  return (
-    <div>
-      <img src="" alt="" />
-      <div className="textContainer">
-        <h1></h1>
-        <p></p>
-      </div>
-    </div>
-  )
-};
+import Image from 'next/image';
+import {
+  StyledSectionCard,
+  StyledSectionText,
+  StyledImgContainer,
+  StyledTitle,
+  StyledSectionDescription,
+} from './elements';
+import parse from 'html-react-parser';
 
+export const Card = ({ image, title, description, ...props }) => {
+
+  return (
+    <StyledSectionCard {...props}>
+      <StyledImgContainer>
+        <Image
+          objectFit='contain'
+          layout='responsive'
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+        />
+      </StyledImgContainer>
+      <StyledSectionText>
+        <StyledTitle>{title}</StyledTitle>
+        <StyledSectionDescription>
+       {parse(description)}
+        </StyledSectionDescription>
+      </StyledSectionText>
+    </StyledSectionCard>
+  );
+};

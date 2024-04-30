@@ -8,6 +8,12 @@ const heroProps = {
   ctaText: "Start",
 };
 
+const agencySelectionProps = {
+  image: { src: "/img/video.png", alt: "", width: 658, height: 1050 },
+  title: "Managed agency selection",
+  description: "Stengthen your onboarding process"
+};
+
 export default function Home() {
   return (
     <>
@@ -21,8 +27,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        <AgencySelection />
-        {/** Other sections */}
+        <AgencySelection {...agencySelectionProps}/>
       </div>
     </>
   );
