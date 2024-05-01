@@ -50,11 +50,11 @@ export const Main = ({ image, title, description, ...props }) => {
       <StyledWrapperContainer>
         <StyledImageContainer>
           <Image
-            objectFit='contain'
             src={image.src}
             alt={image.alt}
             width={image.width}
             height={image.height}
+            layout="responsive"	
           />
         </StyledImageContainer>
         <StyledCardContainer>

@@ -4,7 +4,7 @@ import {
   SectionContainer,
   SectionHeading,
   SectionInnerHeading,
-} from "../../components";
+} from '../../components';
 
 export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
@@ -47,7 +47,6 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  display: inline-block;
   max-width: 270px;
 `;
 
